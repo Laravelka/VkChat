@@ -93,7 +93,6 @@ public class VkChat extends JavaPlugin {
                         );
                         return false;
                     }
-                    log.info("(false) word: " + forbiddenWord + " | " + message);
                 }
 
                 if (this.sendToChat(prefix + message)) {

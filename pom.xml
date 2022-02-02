@@ -6,7 +6,7 @@
 
     <groupId>ru.laravelka</groupId>
     <artifactId>vkChat</artifactId>
-    <version>0.1.3.fix-ALFA</version>
+    <version>0.1.4-ALFA</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
