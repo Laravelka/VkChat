@@ -1,0 +1,23 @@
+name: VkChat
+main: ru.laravelka.VkChat.VkChat
+website: https://laravelka.ru/repo/java/VkChat
+version: 0.1.3.fix-ALFA
+api-version: 1.16
+description: Чат вконтакте
+commands:
+  vkchat:
+    description: Main command of VkChat
+    permission: vkchat.use
+    aliases: [vkc]
+permissions:
+  vkchat.*:
+    children:
+      vkchat.use: true
+      vkchat.bypass.*: true
+  vkchat.bypass.*:
+    children:
+      vkchat.bypass.delay: true
+      vkchat.bypass.forbiddenWords: true
+  vkchat.use:
+    default: true
+    description: Использование команды
