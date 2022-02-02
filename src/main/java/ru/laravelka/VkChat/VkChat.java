@@ -1,21 +1,22 @@
 package ru.laravelka.VkChat;
 
+import api.longpoll.bots.methods.impl.messages.Send;
 import api.longpoll.bots.exceptions.VkApiException;
 import api.longpoll.bots.methods.VkBotsMethods;
-import api.longpoll.bots.methods.impl.messages.Send;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
+
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
+import org.bukkit.command.CommandSender;
+import org.bukkit.command.Command;
+import org.bukkit.entity.Player;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.*;
 import java.util.logging.Logger;
+import java.io.IOException;
+import java.io.File;
+import java.util.*;
 
 public class VkChat extends JavaPlugin {
     final Map<String, FileConfiguration> customConfigs = new HashMap<>();
@@ -31,10 +32,9 @@ public class VkChat extends JavaPlugin {
     public void onEnable() {
         this.saveDefaultConfig();
         this.createCustomConfigs("messages");
-        // this.createCustomConfigs("forbidden_words");
 
         config = this.getConfig();
-        prefix = config.getString("prefix", "[VKChat]");
+        prefix = config.getString("prefix", "§c[§2VKChat§c] ");
         vkApi  = new VkBotsMethods(config.getString("access_token", "token"));
     }
 
@@ -49,8 +49,9 @@ public class VkChat extends JavaPlugin {
 
             if (args.length < 1) {
                 sender.sendMessage(
+                        prefix +
                         this.getCustomConfigs("messages")
-                                .getString(getLocale() + ".usage", "Usage /vkc <§3message§r>")
+                                .getString(getLocale() + ".usage", " Usage /vkc <§3message§r>")
                 );
                 return false;
             }
@@ -63,9 +64,9 @@ public class VkChat extends JavaPlugin {
                 config = YamlConfiguration.loadConfiguration(
                         new File(this.getDataFolder(), "config.yml")
                 );
-                log.info("config: " + config.getString("access_token"));
 
                 sender.sendMessage(
+                        prefix +
                         this.getCustomConfigs("messages")
                                 .getString(getLocale() + ".reloaded", "§2Config has been reloaded!")
                 );
@@ -76,15 +77,14 @@ public class VkChat extends JavaPlugin {
                 final List<String> forbiddenWords = Objects.requireNonNull(
                         config.getStringList("forbidden_words.words_list")
                 );
-                log.info("words: " + forbiddenWords.toString());
 
                 for (String forbiddenWord : forbiddenWords) {
                     int isForbidden = message.indexOf(forbiddenWord);
 
                     if (isForbidden != -1) {
-                        log.info("(true) word: " + forbiddenWord + " | " + message);
 
                         sender.sendMessage(
+                                prefix +
                                 this.getCustomConfigs("messages")
                                         .getString(
                                                 getLocale() + ".forbidden_words",
@@ -111,7 +111,7 @@ public class VkChat extends JavaPlugin {
             } else {
                 final Player player = (Player) sender;
                 final List<String> forbiddenWords = Objects.requireNonNull(
-                        config.getStringList("forbidden_words")
+                        config.getStringList("forbidden_words.words_list")
                 );
 
                 if (!player.hasPermission("vkchat.bypass.forbiddenWords")) {
@@ -148,7 +148,7 @@ public class VkChat extends JavaPlugin {
                                 this.getCustomConfigs("messages")
                                         .getString(
                                                 getLocale() + ".message_delay",
-                                                "Not so fast! Wait {seconds} sec."
+                                                " Not so fast! Wait {seconds} sec."
                                         )
                                         .replace("{seconds}", Integer.toString(waitSeconds))
                         );
@@ -162,7 +162,7 @@ public class VkChat extends JavaPlugin {
                     sender.sendMessage(
                             prefix +
                             this.getCustomConfigs("messages")
-                                    .getString(getLocale() + ".sent", "The message has been sent!")
+                                    .getString(getLocale() + ".sent", "§2The message has been sent!")
                     );
 
                     sender.sendMessage(
@@ -220,7 +220,7 @@ public class VkChat extends JavaPlugin {
                     .execute();
 
             if (!response.toString().isEmpty()) {
-                log.info("Send message response: " + response);
+                log.info("Send message response: " + response.toString());
 
                 return true;
             }

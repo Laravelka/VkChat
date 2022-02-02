@@ -1,5 +1,5 @@
 locale: ru # локализация (messages.yml)
-prefix: "§c[§2VKChat§c] " #префикс
+prefix: "§c[§2VKChat§c] " # префикс
 peer_id: 2000000001 # id беседы
 group_id: 125492813 # id группы
 api_version: 5.131 # версия VK API (максимальная пока что)
