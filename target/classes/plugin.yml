@@ -1,7 +1,7 @@
 name: VkChat
 main: ru.laravelka.VkChat.VkChat
-website: https://laravelka.ru/repo/java/VkChat
-version: 0.1.6-ALFA
+website: https://github.com/Laravelka/VkChat.git
+version: 0.1.8-ALFA
 api-version: 1.16
 description: Чат вконтакте
 commands:

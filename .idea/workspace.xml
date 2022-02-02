@@ -2,46 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa8f68c3-3ef1-48cc-b812-695d5233d400" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/laravelka/VkChat/VkChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/laravelka/VkChat/VkChat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/local.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/messages.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/laravelka/VkChat/Helpers/ColoredText.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/laravelka/VkChat/VkChat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/laravelka/VkChat/VkChat.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-vkChat-0.0.1-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-vkChat-0.0.2-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-vkChat-0.0.3-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-vkChat-0.0.4-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-vkChat-0.0.5-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-vkChat-0.0.6-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-vkChat-0.0.7-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-vkChat-0.0.8-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-vkChat-0.0.9-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-vkChat-0.1.0-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-vkChat-0.1.2-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-vkChat-0.1.3-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-vkChat-0.1.3.fix-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vkChat-0.0.1-ALFA-shaded.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vkChat-0.0.1-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vkChat-0.0.2-ALFA-shaded.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vkChat-0.0.2-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vkChat-0.0.3-ALFA-shaded.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vkChat-0.0.3-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vkChat-0.0.4-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vkChat-0.0.5-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vkChat-0.0.6-ALFA-shaded.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vkChat-0.0.6-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vkChat-0.0.7-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vkChat-0.0.8-ALFA-shaded.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vkChat-0.0.8-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vkChat-0.0.9-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vkChat-0.1.0-ALFA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vkChat-0.1.2-ALFA-shaded.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/vkChat-0.1.2-ALFA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,22 +128,22 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="398" y="353" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.984@0.0.1280.984" timestamp="1643775164030" />
-    <state width="1236" height="63" key="GridCell.Tab.0.bottom" timestamp="1643789229557">
+    <state width="1236" height="63" key="GridCell.Tab.0.bottom" timestamp="1643790327047">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="63" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1643789229557" />
-    <state width="1236" height="63" key="GridCell.Tab.0.center" timestamp="1643789229557">
+    <state width="1236" height="63" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1643790327047" />
+    <state width="1236" height="63" key="GridCell.Tab.0.center" timestamp="1643790327046">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="63" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1643789229557" />
-    <state width="1236" height="63" key="GridCell.Tab.0.left" timestamp="1643789229557">
+    <state width="1236" height="63" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1643790327046" />
+    <state width="1236" height="63" key="GridCell.Tab.0.left" timestamp="1643790327046">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="63" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1643789229557" />
-    <state width="1236" height="63" key="GridCell.Tab.0.right" timestamp="1643789229557">
+    <state width="1236" height="63" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1643790327046" />
+    <state width="1236" height="63" key="GridCell.Tab.0.right" timestamp="1643790327046">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1236" height="63" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1643789229557" />
+    <state width="1236" height="63" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1643790327046" />
     <state x="141" y="123" key="SettingsEditor" timestamp="1643783800945">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
